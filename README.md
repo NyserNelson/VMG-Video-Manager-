@@ -1,1 +1,1 @@
-# Video-Manager-VMG-
+# VMG

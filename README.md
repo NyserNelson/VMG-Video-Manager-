@@ -1,1 +1,1 @@
-# RGM
+# VMG (Video Manager)

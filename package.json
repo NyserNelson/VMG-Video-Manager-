@@ -1,0 +1,31 @@
+{
+  "name": "video-manager-vmg",
+  "version": "1.0.0",
+  "description": "Video Manager (VMG)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "electron-prompt": "^1.7.0"
+  },
+  "build": {
+    "appId": "com.yourcompany.video-manager",
+    "productName": "Video Manager (VMG)",
+    "directories": { "output": "dist" },
+    "files": [
+      "main.js",
+      "index.html",
+      "style.css",
+      "renderer.js",
+      "assets/**/*"
+    ],
+    "win": { "icon": "assets/icon.ico", "target": "nsis" }
+  }
+}
